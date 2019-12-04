@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
         arFragment.setOnTapArPlaneListener(((hitResult, plane, motionEvent) -> {
             Anchor anchor = hitResult.createAnchor();
             ModelRenderable.builder()
-                    .setSource(this, Uri.parse("ArcticFox_posed.sfb"))
+                    .setSource(this, Uri.parse("ArcticFox_Posed.sfb"))
                     .build()
                     .thenAccept(modelRenderable ->
                             addModelToScene(anchor, modelRenderable))
